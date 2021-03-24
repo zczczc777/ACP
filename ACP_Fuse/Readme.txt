@@ -1,7 +1,8 @@
 How to use can refer to:
 D:
-cd C:\Users\Administrator\Desktop\ACP_Fuse
-java -jar run.jar input.fasta
+cd C:\Users\Administrator.OS-201709041456\Desktop\ACP_Fuse
+java -jar run.jar ACP_mixed_test.fasta
+
 
 note:
 1.The input file format requires the fasta format:
@@ -24,5 +25,3 @@ Then the result is as follows:
 2.There are 99 independent feature descriptors in the base feature pool in the arff_out folder.
 3.In the New_feature file, there is the mrmR score file FT.mrmrout and the feature extraction first step file FTC.arff.
 
-references:
-Leyi Wei, Chen Zhou, Ran Su, Quan Zou. PEPred-Suite: improved and robust prediction of therapeutic peptides using adaptive feature representation learning.Bioinformatics. 2019. (SCI, JCR-2, IF2017=5.4). DOI: 10.1093/bioinformatics/btz246.
