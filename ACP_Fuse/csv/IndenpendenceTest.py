@@ -94,17 +94,18 @@ if __name__ == "__main__":
     #print len(X_predict)
     pd.DataFrame(X_predict_proba[:,1]).to_csv(outputname1+'predict_proba.csv',header=None,index=False)
     pd.DataFrame(X_predict.T).to_csv(outputname1+'predict_probac.csv',header=None,index=False)
-    ROC_AUC_area=metrics.roc_auc_score(Y,X_predict_proba[:,1])
+ #   ROC_AUC_area=metrics.roc_auc_score(Y,X_predict_proba[:,1])
     ACC=metrics.accuracy_score(Y,X_predict)
     precision, recall, SN, SP, GM, TP, TN, FP, FN = performance(Y, X_predict)
-    F1_Score=metrics.f1_score(Y, X_predict)
-    F_measure=F1_Score
-    MCC=metrics.matthews_corrcoef(Y, X_predict)
+#    F1_Score=metrics.f1_score(Y, X_predict)
+ #   F_measure=F1_Score
+ #   MCC=metrics.matthews_corrcoef(Y, X_predict)
     pos=TP+FN
     neg=FP+TN
 
-    print X.shape[1]
-    print name1
+    print SN
+    print SP
     print ACC
-    savedata=[[[ACC,precision, recall,SN, SP, GM,F_measure,F1_Score,MCC,ROC_AUC_area,TP,FN,FP,TN,pos,neg]]]
+    savedata=[[[ACC,precision, recall,SN, SP, GM,TP,FN,FP,TN,pos,neg]]]    
+ #   savedata=[[[ACC,precision, recall,SN, SP, GM,F_measure,F1_Score,MCC,ROC_AUC_area,TP,FN,FP,TN,pos,neg]]]
     easy_excel.save("RF",[str(X.shape[1])],savedata,'1RF'+'_Predict_'+name+'.xls')
