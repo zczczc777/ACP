@@ -17,7 +17,7 @@ ARPAKAAATQKKVERKAPDA
 TVEIVMGLEEEFQISVE
 2.The space character cannot appear in the specified cd path.
 3.The input sequence should not be less than 10, and each sequence should be longer than 5.
-4.Need to be in the windows operating system, install the java environment  and python2.7  environment.
+4.Need to be in the windows operating system, install the java  environment  and python2.7  environment.
 
 Then the result is as follows:
 1.We display the results of the best features in the Optimal_feature.csv file and provide complete results of the relevant functions obtained by the SFS method in the Result_FT.csv file, allowing the user to select the best features.
