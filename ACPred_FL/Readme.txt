@@ -2,8 +2,8 @@ How to use can refer to:
 
 C:
 cd C:\Users\Administrator\Desktop\ACPred_FL
-java -jar ACPFL_Seq.jar inputfile 
-java -jar ACPFL_Result.jar inputfile 
+java -jar ACPFL_Seq.jar ACP_mixed_test.fasta
+java -jar ACPFL_Result.jar ACP_mixed_test.fasta
 
 
 The positive case label defaults to 0, and the negative case label defaults to 1; or the label can be defined by the symbol "|".
